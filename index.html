@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PlantTinder — adote uma planta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8FDB8E"/><stop offset=".55" stop-color="#3C9A55"/><stop offset="1" stop-color="#1B5E34"/></linearGradient>
+<linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A5E27A"/><stop offset="1" stop-color="#2E8A47"/></linearGradient>
+<linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C8E8D0"/><stop offset="1" stop-color="#5FA98A"/></linearGradient>
+<linearGradient id="pt" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E08A5B"/><stop offset=".5" stop-color="#C46A3E"/><stop offset="1" stop-color="#8E4426"/></linearGradient>
+<radialGradient id="sh"><stop offset="0" stop-color="#000" stop-opacity=".35"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+</defs></svg>
+
+<header><div class="wrap">
+<a class="logo" href="#topo"><i></i>PlantTinder</a>
+<nav aria-label="Principal"><a href="#demo">Experimente</a><a href="#como">Como funciona</a><a href="#recursos">Recursos</a><a href="#qualidade">Qualidade</a><a href="#equipe">Equipe</a></nav>
+</div></header>
+
+<main id="topo">
+<div class="hero" id="heroBox">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap">
+    <div>
+      <div class="pill"><b></b>Adoção responsável de plantas</div>
+      <h1 id="h1"></h1>
+      <p>A PlantTinder conecta quem tem uma planta para doar com quem quer adotar. Encontre plantas perto de você, combine a entrega pelo chat e avalie a experiência.</p>
+      <a class="btn" href="#demo">Experimentar agora</a><a class="btn ghost" href="#como">Como funciona</a>
+    </div>
+    <div class="scene" id="scene"><div id="heroArt"></div><div class="shelf"></div></div>
+  </div>
+</div>
+<div class="marq" aria-hidden="true"><div id="marq"></div></div>
+
+<div class="wrap">
+<div class="stats">
+<div class="stat reveal"><b data-n="10000" data-s="+">0</b><span>usuários simultâneos suportados</span></div>
+<div class="stat reveal"><b data-n="2" data-s=" s">0</b><span>para retornar uma busca</span></div>
+<div class="stat reveal"><b data-n="99" data-s="%">0</b><span>de disponibilidade mínima</span></div>
+<div class="stat reveal"><b data-n="24" data-s="/7">0</b><span>plataforma sempre aberta</span></div>
+</div>
+</div>
+
+<section id="demo"><div class="wrap demo">
+<div class="reveal">
+<h2>Arraste, curta, adote.</h2>
+<p class="lead">Veja como é encontrar uma planta na PlantTinder. Arraste a carta para a direita para pedir a adoção ou para a esquerda para passar.</p>
+</div>
+<div class="reveal">
+<div class="deck" id="deck" aria-label="Demonstração de cartas de plantas"></div>
+<div class="actions"><button class="n" id="no" aria-label="Passar">✕</button><button class="y" id="yes" aria-label="Quero adotar">♥</button></div>
+<div class="status" id="status" role="status" aria-live="polite">Arraste a carta ou use os botões.</div>
+</div>
+</div></section>
+
+<section id="como" style="padding-top:20px"><div class="wrap">
+<h2 class="reveal">Da busca à planta nas suas mãos</h2>
+<p class="lead reveal">Quatro passos, do cadastro à avaliação do doador.</p>
+<ol class="steps" id="steps"><div class="fill" id="fill"></div>
+<li class="reveal"><em>1</em><h3>Cadastre-se</h3><p>Informe nome, e-mail, telefone, localização e suas preferências de plantas.</p></li>
+<li class="reveal"><em>2</em><h3>Encontre</h3><p>Busque por espécie, tamanho ou região e veja a distância até o doador.</p></li>
+<li class="reveal"><em>3</em><h3>Peça a adoção</h3><p>Envie o pedido. O doador é notificado e aceita ou recusa.</p></li>
+<li class="reveal"><em>4</em><h3>Combine e avalie</h3><p>Converse sobre horário e local, receba a planta e dê de 1 a 5 estrelas.</p></li>
+</ol>
+</div></section>
+
+<section id="recursos" style="padding-top:20px"><div class="wrap">
+<h2 class="reveal">O que você pode fazer</h2>
+<p class="lead reveal">Os requisitos funcionais da versão 1.0.</p>
+<div class="feat">
+<article class="fc reveal"><h3>Cadastrar usuário</h3><p>Conta com validação de e-mail e campos obrigatórios, além das suas preferências de plantas.</p></article>
+<article class="fc reveal"><h3>Anunciar planta</h3><p>Publique nome, espécie, tamanho, saúde, cuidados e fotos da planta que quer doar.</p></article>
+<article class="fc reveal"><h3>Buscar e filtrar</h3><p>Resultados com foto, nome, disponibilidade e distância, filtrados pela sua região.</p></article>
+<article class="fc reveal"><h3>Pedido de adoção</h3><p>Pedido registrado com data e hora, notificação ao doador e histórico completo.</p></article>
+<article class="fc reveal"><h3>Chat entre usuários</h3><p>Mensagens quase em tempo real, histórico de conversas e bloqueio de spam e ofensas.</p></article>
+<article class="fc reveal"><h3>Avaliar e comentar</h3><p>Nota de 1 a 5 estrelas, comentário e média de avaliações no perfil.</p></article>
+<article class="fc reveal"><h3>Gerenciar perfil</h3><p>Edite dados, foto e preferências para receber recomendações mais certeiras.</p></article>
+</div>
+</div></section>
+
+<section id="qualidade" class="qwrap"><div class="wrap">
+<h2 class="reveal">Feita para ser confiável</h2>
+<p class="lead reveal">Os requisitos não funcionais que sustentam a experiência.</p>
+<div class="qual">
+<div class="reveal"><h3>Segurança</h3><p>Login obrigatório, senhas criptografadas e dados protegidos conforme a LGPD.</p></div>
+<div class="reveal"><h3>Usabilidade</h3><p>Rótulos claros, erros que orientam e interface responsiva para celular.</p></div>
+<div class="reveal"><h3>Desempenho</h3><p>Busca em até 2 segundos, fotos em até 3 e mensagens entregues em até 1 segundo.</p></div>
+<div class="reveal"><h3>Disponibilidade</h3><p>No ar 24 horas, mínimo de 99% de uptime e backup automático.</p></div>
+<div class="reveal"><h3>Integridade dos dados</h3><p>Sem anúncios incompletos, sem excluir planta com pedido pendente, uma avaliação por adoção.</p></div>
+<div class="reveal"><h3>Escalabilidade</h3><p>Preparada para 10.000 usuários simultâneos com expansão horizontal.</p></div>
+</div>
+</div></section>
+
+<section id="equipe"><div class="wrap">
+<h2 class="reveal">Quem faz a PlantTinder</h2>
+<p class="lead reveal">Levantamento de requisitos da disciplina Análise e Projeto de Sistemas.</p>
+<div class="team">
+<a class="reveal" href="https://github.com/jpedro-swe"><b>João Pedro Alves de Sousa</b><span>@jpedro-swe</span></a>
+<a class="reveal" href="https://github.com/brandao395"><b>Hélter Brandão de Oliveira</b><span>@brandao395</span></a>
+<a class="reveal" href="https://github.com/MF-DAVI"><b>Davi Gonçalves Castro</b><span>@MF-DAVI</span></a>
+<a class="reveal" href="https://github.com/7deo"><b>Jorge Luis Soares do Santos</b><span>@7deo</span></a>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">PlantTinder, versão 1.0. Projeto acadêmico de Análise e Projeto de Sistemas.</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
